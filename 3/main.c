@@ -9,5 +9,6 @@ int main() {
     int* arr_i = &arr[0];
     unsigned len_arr = sizeof(arr)/sizeof(arr[0]); // находим длину массива
     qsort(arr_i, len_arr);
-    printf("%d %d", arr[2], arr[3]);
+    for (int i = 0; i < len_arr; i++)
+        printf("%d element = %d\n", i, arr[i]);
 }
